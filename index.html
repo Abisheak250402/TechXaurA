@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #222;
+      color: white;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    header p {
+      margin: 0;
+      font-size: 14px;
+      color: #ff9800;
+    }
+
+    /* HERO SLIDER */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* 3 images */
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    /* SLIDE ANIMATION */
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      30% { transform: translateX(0); }
+      35% { transform: translateX(-100%); }
+      65% { transform: translateX(-100%); }
+      70% { transform: translateX(-200%); }
+      95% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <img src="https://via.placeholder.com/100x50" alt="Logo">
+      <div>
+        <h1>My Website</h1>
+        <p>Building Dreams with Code</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <div class="slider">
+    <div class="slides">
+      <img src="https://picsum.photos/id/1015/1200/400" alt="Slide 1">
+      <img src="https://picsum.photos/id/1016/1200/400" alt="Slide 2">
+      <img src="https://picsum.photos/id/1018/1200/400" alt="Slide 3">
+    </div>
+  </div>
+
+</body>
+</html>
